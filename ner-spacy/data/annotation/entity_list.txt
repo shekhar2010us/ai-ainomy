@@ -1,0 +1,23 @@
+Person name
+    {use general purpose NER}
+Company name
+    {use general purpose NER} => chunk => get more information -- domain, size, tier, etc.
+Location
+    {use general purpose NER}
+Date
+    {regex, examples ...}
+
+Duration
+    {train, examples ...} => chunk => normalize to number of months
+Education
+    {train, include college and certification} => chunk => get more information -- location, tier, etc.
+Roles
+    {train, examples ...} => also create a dictionary from O*Net and ESCO
+Responsibilities
+    {train, examples ...}
+Industry
+    {train, examples} => also create a dictionary
+Keywords (Technology, Skill)
+    {train} => later classify as technology, skill, management => also create a dictionary
+Adjective (followed by Keyword or Industry)
+    {train, examples ...}
